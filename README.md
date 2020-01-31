@@ -1,8 +1,8 @@
-# SUPP.AI: detecing supplement-drug interactions
+# SUPP.AI: detecting supplement-drug interactions
 
-This repository contains data and models used to detect dietary supplement interactions from scientific articles. The RoBERTa-DDI model is trained used drug-drug interaction data from the DDI-2013 and NLM-DailyMed datasets. We use this model to extract evidence sentences for supplement interactions from 22M articles in Semantic Scholar.
+This repository contains data used to detect dietary supplement interactions from scientific articles on SUPP.AI. We train the RoBERTa-DDI model using drug-drug interaction data from the DDI-2013 and NLM-DailyMed datasets. We use this model to extract evidence sentences for supplement interactions from 22M articles in Semantic Scholar.
 
-The resulting interactions are available at [SUPP.AI](https://supp.ai/).
+The resulting interactions are available for search at [SUPP.AI](https://supp.ai/).
 
 Extracted evidence is available for bulk download [here](https://api.semanticscholar.org/supp/).
 
@@ -11,8 +11,6 @@ See [our arXiv preprint](https://arxiv.org/abs/1909.08135v1) for implementation 
 Please address feedback to lucyw [at] allenai [dot] org.
 
 ## RoBERTa-DDI Model
-
-The model is available in `model/`. 
 
 RoBERTa-DDI uses pre-trained representations from the [RoBERTa](https://arxiv.org/abs/1907.11692) language model and fine-tunes these representations on DDI classification data. The model is implemented using [AllenNLP](https://github.com/allenai/allennlp).
 
@@ -41,7 +39,7 @@ We leverage [UMLS Metathesaurus](https://www.nlm.nih.gov/research/umls/knowledge
 
 ## Citation
 
-If using this data or model, please cite our arXiv preprint:
+If using this data, please cite our arXiv preprint:
 
 ```
 @misc{Wang2019ExtractingEO,
