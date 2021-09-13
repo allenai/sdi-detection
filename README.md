@@ -52,15 +52,28 @@ We leverage [UMLS Metathesaurus](https://www.nlm.nih.gov/research/umls/knowledge
 
 ## Citation
 
-If using this data, please cite our arXiv preprint:
+If using this data, please cite our ACL paper:
+
+> Wang, L.L., Tafjord, O., Cohan, A., Jain, S., Skjonsberg, S., Schoenick, C., Botner, N., & Ammar, W. (2020). SUPP.AI: finding evidence for supplement-drug interactions. ACL.
 
 ```
-@misc{Wang2019ExtractingEO,
-  title={Extracting evidence of supplement-drug interactions from literature},
-  author={Lucy Lu Wang and Oyvind Tafjord and Sarthak Jain and Arman Cohan and Sam Skjonsberg and Carissa Schoenick and Nick Botner and Waleed Ammar},
-  archivePrefix={ArXiv},
-  primaryClass={cs.CL},
-  year={2019},
-  eprint={1909.08135}
+@inproceedings{wang-etal-2020-supp,
+    title = "{SUPP}.{AI}: finding evidence for supplement-drug interactions",
+    author = "Wang, Lucy  and
+      Tafjord, Oyvind  and
+      Cohan, Arman  and
+      Jain, Sarthak  and
+      Skjonsberg, Sam  and
+      Schoenick, Carissa  and
+      Botner, Nick  and
+      Ammar, Waleed",
+    booktitle = "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics: System Demonstrations",
+    month = jul,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.acl-demos.41",
+    doi = "10.18653/v1/2020.acl-demos.41",
+    pages = "362--371"
 }
 ```
