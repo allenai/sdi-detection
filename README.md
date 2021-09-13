@@ -20,6 +20,19 @@ Training data is derived from the DDI-2013 and NLM-DailyMed datasets. Train/test
 
 Train/Dev/Test splits are available in `training_data/`.
 
+| Dataset | Train | Dev | Test |
+|----------|-----------|--------|----------|
+| DDI 2013 (max 10) | 9442 | 1077 | 2026 |
+| NLM DailyMed (max 10) | 6847 | 870 | 740 |
+| DDI 2013 (max 100) | 18362* | 2069* | 4413 |
+| NLM DailyMed (max 100) | 11372* | 1255* | 927 |
+| DDI 2013 (all pairs) | 25594 | 2069 | 5688* |
+| NLM DailyMed (all pairs) | 13090 | 1255 | 927* |
+
+Max 10 limits source sentences to those with less than 10 unique pairs of labeled entities. Max 100 limits source sentences to those with less than 100 unique pairs of labeled entities. All pairs perserves all pairwise relationships without any filtering.
+
+The model was trained on training data splits with max 100 pairs perserved (`training_data/NLM-DDI2013-Corpora-Pairs-V1max100/`). Test results are reported on all pairs (`training_data/NLM-DDI2013-Corpora-Pairs-All/`) of entities from the test split for comparability to prior work. These are marked with asterisks in the table for clarity.
+
 ### Supplement interaction evaluation data
 
 A set of 500 sentences are manually labeled for the presence or absence of a supplement-related interaction. These labels are provided in `sdi_eval.tsv`.
